@@ -1,0 +1,13 @@
+2. Write a Program to swap two numbers
+
+<?php	
+$a=50;
+$b=60;
+echo "Value of a: $a</br>";
+echo "Value of b: $b</br>";
+$a=$a+$b;
+$b=$a-$b;
+$a=$a-$b;
+echo "Value of a: $a</br>";
+echo "Value of b: $b</br>";
+?>

@@ -1,0 +1,33 @@
+3. Write a Program for Bubble sorting.
+
+<?php
+function swap($arr,$p1,$p2)
+{
+	$temp = $arr[$p2];
+    $arr[$p2] = $arr[$p1];
+    $arr[$p1] = $temp;
+    return $arr;
+}
+function bubble($arr)
+{
+	$count = count($arr);
+    for ($j = 1; $j < $count; $j++)
+    {
+    	for ($i=1; $i < $count-$j+1; $i++)
+    	{
+        	if ($arr[$i-1] > $arr[$i])
+            {
+            	$arr = swap($arr, $i-1, $i);
+            }
+        }
+    }
+    return $arr;
+}
+$in = range(1,5); 
+shuffle($in);
+?>
+<pre>
+<?php
+    print_r($in);
+    print_r(bubble($in));
+?>

@@ -1,0 +1,15 @@
+1. Write a Program for finding the biggest number in an array without using any array functions.
+
+ans.  <?php
+function biggest($arr, $n) 
+{
+$i;
+for ($i = 1; $i < $n; $i++)
+if ($arr[$i] > $max)
+$max = $arr[$i];
+return $max; 
+}
+$arr= array(10, 366, 40, 600, 92);
+$n = sizeof($arr);
+echo "Biggest in given array is ",biggest($arr, $n);
+?>
